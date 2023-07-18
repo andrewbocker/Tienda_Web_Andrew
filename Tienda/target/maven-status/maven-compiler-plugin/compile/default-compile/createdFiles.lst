@@ -1,5 +1,3 @@
-com\tienda\dao\PruebasDao.class
-com\tienda\controller\ProductoController$CategoriaController.class
 com\tienda\TiendaApplication.class
 com\tienda\domain\Categoria.class
 com\tienda\controller\CategoriaController.class
