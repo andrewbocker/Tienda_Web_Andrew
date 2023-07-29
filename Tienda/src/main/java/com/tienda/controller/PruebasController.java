@@ -104,7 +104,7 @@ public class PruebasController {
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("precioInf", precioInf);
         model.addAttribute("precioSup", precioSup);
-        return "/pruebas/listado2";
+        return "/consulta/listado2";
     }
     
     @PostMapping("/query2")
@@ -115,7 +115,7 @@ public class PruebasController {
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("precioInf", precioInf);
         model.addAttribute("precioSup", precioSup);
-        return "/pruebas/listado2";
+        return "/consulta/listado2";
     }
     
     @PostMapping("/query3")
@@ -126,7 +126,7 @@ public class PruebasController {
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("precioInf", precioInf);
         model.addAttribute("precioSup", precioSup);
-        return "/pruebas/listado2";
+        return "/consulta/listado2";
     }
 
     
