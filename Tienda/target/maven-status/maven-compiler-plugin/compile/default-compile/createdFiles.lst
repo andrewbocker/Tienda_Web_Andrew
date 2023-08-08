@@ -18,7 +18,6 @@ com\tienda\dao\UsuarioDao.class
 com\tienda\TiendaApplication.class
 com\tienda\service\RegistroService.class
 com\tienda\service\CategoriaService.class
-.netbeans_automatic_build
 com\tienda\domain\Producto.class
 com\tienda\service\impl\UsuarioDetailsServiceImpl.class
 com\tienda\service\CorreoService.class

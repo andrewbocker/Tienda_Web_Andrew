@@ -68,15 +68,28 @@ public class ReporteController {
         Map<String,Object> parametros = new HashMap();
         parametros.put("fechaIncio", fechaInicio);
         parametros.put("fechaFin",fechaFin);
-        var reporte ="ventas";
+        var reporte ="ventasTotales";
         return reporteService.generaReporte(reporte, null, tipo);
     }
     
     
+    @GetMapping("rolesUsuario")
+    public ResponseEntity<Resource> reportRolesUsuario(@RequestParam String tipo)
+            throws IOException{
+        var reporte ="rolesUsuario";
+        return reporteService.generaReporte(reporte, null, tipo);
+    }
     
-    
-    
-    
-    
+    @GetMapping("/usuariosFactura")
+    public ResponseEntity<Resource> reporteUsuariosFactura(
+            @RequestParam int total,
+            @RequestParam String tipo)
+            throws IOException{
+        Map<String,Object> parametros = new HashMap();
+        parametros.put("totalFactura", total);
+        var reporte ="usuariosFactura";
+        return reporteService.generaReporte(reporte, null, tipo);
+    }
+
     
 }
